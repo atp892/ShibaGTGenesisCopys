@@ -65,6 +65,8 @@ namespace ShibaGTGenesis
             }
         }
 
+        public static bool EnemyAIBlocker;
+
         public static bool disableQuitbox;
 
         public static void DisableQuitbox()

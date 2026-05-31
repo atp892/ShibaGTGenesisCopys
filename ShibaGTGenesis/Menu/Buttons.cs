@@ -119,6 +119,7 @@ namespace ShibaGTGenesis.Menu
                 new ButtonInfo { buttonText = "Fast Lucy [m]", method =() => WorldMods.FastLucy(), isTogglable = false, toolTip = "lucy!"},
                 new ButtonInfo { buttonText = "Fix Lucy [m]", method =() => WorldMods.FixLucy(), isTogglable = false,  toolTip = "lucy!"},
                 new ButtonInfo { buttonText = "Disable QuitBox", method =() => WorldMods.DisableQuitbox(), disableMethod =() => WorldMods.OffQuitboxMod(), isTogglable = true, toolTip = "crazy!"},
+                new ButtonInfo { buttonText = "Enemy Crash Blocker", enableMethod =() => WorldMods.EnemyAIBlocker = true, disableMethod =() => WorldMods.EnemyAIBlocker = false, isTogglable = true, toolTip = "no crashy crash"},
                 new ButtonInfo { buttonText = "Teleport To Stump When Out Of Map", method =() => WorldMods.QuitboxMod(), disableMethod =() => WorldMods.OffQuitboxMod(), isTogglable = true, toolTip = "crazy!"},
 
             },
