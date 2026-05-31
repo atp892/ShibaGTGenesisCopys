@@ -192,6 +192,7 @@ namespace ShibaGTGenesis.Menu
                 new ButtonInfo { buttonText = "Head Spaz", method =() => RigMods.HeadSpaz(), isTogglable = true, toolTip = "Spaz!" },
                 new ButtonInfo { buttonText = "Head Upsidedown", method =() => RigMods.HeadUpsidedown(), disableMethod =() => RigMods.OFFHeadUpsidedown(), isTogglable = true, toolTip = "Upsidedown!" },
                 new ButtonInfo { buttonText = "Head Backwards", method =() => RigMods.HeadBackwards(), disableMethod =() => RigMods.OFFHeadBackwards(), isTogglable = true, toolTip = "Backwords!" },
+                new ButtonInfo { buttonText = "Fix Head", method =() => RigMods.FixHead(), isTogglable = true, toolTip = "head fix with long arms and stuf" },
             },
 
             new ButtonInfo[] { // Advantage Mods | 9

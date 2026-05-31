@@ -1,10 +1,8 @@
 ﻿using easyInputs;
-using Il2CppSystem;
 using Photon.Pun;
 using ShibaGTGenesis.Classes;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace ShibaGTGenesis
 {
@@ -27,7 +25,11 @@ namespace ShibaGTGenesis
                     GorillaTagger.Instance.offlineVRRig.enabled = true;
             }
         }
-
+        public static void FixHead()
+        {
+            if (PhotonNetwork.InRoom) GorillaTagger.Instance.myVRRig.headConstraint.transform.position = GorillaTagger.Instance.headCollider.transform.position;
+            else GorillaTagger.Instance.myVRRig.headConstraint.transform.position = GorillaTagger.Instance.headCollider.transform.position;
+        }
         public static void ResetRig()
         {
             if (PhotonNetwork.InRoom)
